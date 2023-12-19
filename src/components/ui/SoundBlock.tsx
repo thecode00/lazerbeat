@@ -1,6 +1,6 @@
-import React, { useEffect, useLayoutEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "./SoundBlock.module.css";
-
+import { motion } from "framer-motion";
 function SoundBlock() {
   const blockRef = useRef<HTMLDivElement>(null);
 
@@ -25,9 +25,9 @@ function SoundBlock() {
   }, []);
 
   return (
-    <div className={classes.block} ref={blockRef}>
+    <motion.div className={classes.block} drag={true}>
       SoundBlock
-    </div>
+    </motion.div>
   );
 }
 
