@@ -1,8 +1,5 @@
 import React, { useEffect, useLayoutEffect, useRef } from "react";
 import classes from "./SoundBlock.module.css";
-import gsap from "gsap";
-import { Draggable } from "gsap/Draggable";
-import { InertiaPlugin } from "gsap/InertiaPlugin";
 
 function SoundBlock() {
   const blockRef = useRef<HTMLDivElement>(null);
@@ -11,11 +8,6 @@ function SoundBlock() {
     const blockElement = blockRef.current;
 
     if (!blockElement) return;
-    // 블록을 드래그 할수있게 만듬
-    gsap.registerPlugin(Draggable);
-    Draggable.create(blockElement, { bounds: ".App" });
-
-    gsap.set(blockElement, { opacity: 1, scale: 1 });
 
     // blockElement.addEventListener("mouseenter", () => {
     //   gsap.to(blockElement, {
