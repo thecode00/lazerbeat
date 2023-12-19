@@ -1,5 +1,8 @@
 .block {
   width: fit-content;
+  border-radius: 16px;
+  border: 1px ivory solid;
+  padding: 16px;
   box-shadow: 0 0 50px gold, 0 0 150px gold, inset 0 20px 20px 40px whitesmoke,
     inset 30px 0 35px 50px ivory;
 }

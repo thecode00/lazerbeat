@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import SoundBlock from "./components/ui/SoundBlock";
+import Laser from "./components/laser/Laser";
 
 function App() {
   return (
     <div className="App">
-      <SoundBlock />
+      <Laser />
       <SoundBlock />
     </div>
   );
