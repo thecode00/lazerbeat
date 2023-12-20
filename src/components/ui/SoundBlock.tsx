@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 function SoundBlock() {
   const blockRef = useRef<HTMLDivElement>(null);
 
+
   useEffect(() => {
     const blockElement = blockRef.current;
 
@@ -25,7 +26,7 @@ function SoundBlock() {
   }, []);
 
   return (
-    <motion.div className={classes.block} drag={true}>
+    <motion.div className={classes.block}>
       SoundBlock
     </motion.div>
   );
